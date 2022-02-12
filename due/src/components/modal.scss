@@ -1,0 +1,245 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(240, 240, 240, 0.7);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow:
+  0 0 7px rgba(0,0,0,0.5);
+  border: 1px solid #bbb;
+  position: relative;
+}
+
+.modal-child .selector {
+  border-radius: 15px;
+  outline: none;
+  background: #f6f6f6;
+  border-color: #bbb;
+}
+
+.modal-header {
+  color: white;
+  font-weight: 700;
+  background-color: #5cc5a7;
+  font-size: 18px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #7b7b7b;
+  border-bottom: 1px solid rgb(54, 151, 123);
+  
+}
+
+.modal-header h1 {
+  text-shadow: 0px -1px #575757;
+}
+
+.modal-header button {
+  border: none;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  background-color: #5cc5a7;
+  padding: 0px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  height: 0px;
+}
+
+// .bill-form-modal {
+//   display: flex;
+//   padding: 20px 10px 0 10px;
+//   width: 350px;
+// }
+
+.bill-form-inputs {
+  display: flex;
+  padding: 25px 40px;
+  border-top: 1px solid #eee;
+}
+
+.bill-form-modal img {
+  width: 64px;
+  height: 64px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  border-bottom: 2px solid #ccc;
+}
+
+.bill-info {
+  padding: 0 10px 0 20px;;
+}
+
+.bill-paid-info {
+  display: flex;
+  justify-content: center;
+}
+
+.bill-paid-info p {
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.bill-paid-info .selector{
+  border: 1px dashed #ccc;
+  text-align-last: center;
+  display: block;
+}
+
+.bill-category .selector {
+  border: 1px dashed #ccc;
+  text-align-last: center;
+  display: block;
+  width: 64px;
+}
+
+.bill-info input {
+  border: none;
+  outline: none;
+  
+}
+
+.bill-info > input::placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+
+.bill-info > input {
+  border-bottom: 1px dashed #ddd;
+  width: 180px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.amount-container {
+  width: 180px;
+  padding-top: 10px;
+  display: flex;
+  border-bottom: 1px dashed #ddd;
+}
+
+.amount-container input::placeholder {
+  color: #ddd;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.amount-container p {
+  font-size: 20px;
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.amount-container input {
+  font-size: 36px;
+  font-weight: 700;
+  width: 130px;
+}
+
+.bill-form-modal > p {
+  color: #333333;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0 10px;
+}
+
+
+.bill-form-modal p:first-child {
+  margin-top: -10px 0 0 0;
+}
+
+.modal-user-selector {
+  display: flex;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.modal-user-selector strong {
+  font-weight: 700;
+}
+
+.modal-user-selector p {
+  margin-right: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  justify-content: flex-end;
+  // flex-direction: row;
+  border-top: 1px solid #eee;
+}
+
+.modal-footer button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #333333;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #aaa;
+}
+
+.modal-footer .green-btn {
+  text-shadow: 0px -1px #575757;
+  color: white;
+  background-color: #5cc5a7;
+}
+
+.modal-footer button:first-child:hover {
+  background-color: #e4e4e4;
+}
+
+.settle-up-modal p {
+  padding: 10px;
+} 
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.feedback-form h1 {
+  padding: 10px;
+}
+
+.feedback-form label, .feedback-form input {
+  padding: 10px;
+}
+
+.main-content-left .green-btn {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  font-size: 16px;
+  text-shadow: 0px -1px #575757;
+  letter-spacing: 1px;
+  padding: 7px 10px 0;
+  background-color: #5BC5A7;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow:
+  -1px 0px rgba(0,0,0,0.1),
+  1px 0px rgba(0,0,0,0.1);
+}

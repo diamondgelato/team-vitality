@@ -1,0 +1,163 @@
+.splash-main .about-links-splash {
+  margin: 0 0;
+  display: flex;
+  justify-content: start;
+  height: 66px;
+}
+
+.splash-main {
+  height: 600px;
+}
+
+.about-links-splash .icon-links {
+  font-size: 40px;
+  color: #5BC5A7;
+  border-bottom: 2px;
+}
+
+.about-links-splash a:first-child {
+  margin-left: 90px;
+  // margin-right: 10px;
+}
+
+
+.about-links-splash .icon-links:hover {
+  color: #54bfa1;
+  padding-bottom: 3px;
+  border-bottom: 0px;
+  padding-top: 7px;
+}
+
+.splash {
+  background-image: linear-gradient(#ffffff90, #ffffff90), image-url("background.png");
+  background-repeat: repeat;
+  background-size: 70px;
+  line-height: 1.2;
+  height: 600px;
+}
+
+.splash-main a {
+  display: inline-block;
+}
+
+.splash button {
+  background-color: #5BC5A7;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 15px 60px;
+  border-bottom: 2px solid #999999;
+  margin: 0px;
+}
+
+.splash button:hover {
+  background-color: #54bfa1;
+  border-bottom: 0px;
+  margin-top: 2px;
+}
+
+.splash-main {
+  background-color: #ffffffdc;
+  width: 100%;
+  display: flex;
+  // padding: 40px 0;
+}
+
+
+.splash-main img {
+  width: 40%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.splash-main div {
+  margin: auto;
+  color: #333333;
+  width: 40%;
+}
+
+.splash-main h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.splash-main p {
+  font-size: 18px;
+  width: 80%;
+  padding: 20px 0;
+}
+
+.splash-body {
+  width: 100%;
+  display: flex; 
+  text-align: center;
+  flex-wrap: wrap
+}
+
+.splash-body li {
+  display: block;
+  color: white;
+  width: 50%;
+  position: relative;
+  min-height: 641px;
+}
+
+.splash-content-black {
+  background-image: linear-gradient(#303030d8, #303030d8);
+}
+
+.splash-content-green {
+    background-image: linear-gradient(#1cc29ed8, #1cc29ed8);
+}
+
+.splash-content-orange {
+    background-image: linear-gradient(#e64f18d2, #e64f18d2);
+}
+
+.splash-body h1 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.splash-body p {
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.splash-body img {
+  margin-top: 25px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 162px);
+}
+
+.splash-footer {
+  background-color: white;
+  color: #333333;
+  margin-bottom: 90px;
+}
+
+.splash-footer h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.splash-footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.splash-footer li {
+  width: calc(33% - 40px);
+  font-size: 20px;
+  padding: 0 20px 20px;
+}
