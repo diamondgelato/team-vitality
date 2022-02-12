@@ -5,18 +5,32 @@ mongoose.connect('mongodb://localhost:27017/vitalityDB', {useNewUrlParser: true,
 
 const fractionSchema = new mongoose.Schema({
     // userSchema
-    user: mongoose.Schema.Types.ObjectId,
-    fraction: mongoose.Decimal128
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: [true, "No user specified"]
+    },
+    fraction: {
+        type: mongoose.Decimal128,
+        required: true
+    }
 });
+
+const Fraction = mongoose.model ("Fraction", fractionSchema);
 
 // expense schema
 const expenseSchema = new mongoose.Schema({
     amount: Number,
     name: String,
     date: Date,
-    user_who_added: String,
-    recurring: Boolean,
-    expected: Boolean,
+    user_who_added: mongoose.Schema.Types.ObjectId,
+    recurring: {
+        type: Boolean,
+        default: false
+    },
+    expected: {
+        type: Boolean,
+        default: false
+    },
     users: [fractionSchema]
 });
 
@@ -41,7 +55,10 @@ const groupSchema = new mongoose.Schema({
     groupname: String,
 
     // userSchema
-    user_document: [mongoose.Schema.Types.ObjectId],
+    user_document: {
+        type: [mongoose.Schema.Types.ObjectId],
+        required: true
+    },
 
     // expenseSchema
     expense_document: [mongoose.Schema.Types.ObjectId],
@@ -73,5 +90,6 @@ let user2 = new User ({
 module.exports = {
     'expense': Expense,
     'user': User,
-    'group': Group
+    'group': Group,
+    'fraction': Fraction
 };
