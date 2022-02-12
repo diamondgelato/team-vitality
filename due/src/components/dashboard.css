@@ -5,14 +5,14 @@
 
 .icon-links {
   font-size: 40px;
-  color: #5BC5A7;
+  /* color: #5BC5A7; */
   padding-top: 5px;
   border-bottom: 2px;
   margin-left: 10px;
 }
 
 .icon-links:hover {
-  color: #54bfa1;
+  /* color: #54bfa1; */
   border-bottom: 0px;
   margin-top: 2px;
 }
@@ -166,8 +166,8 @@ input::placeholder {
 }
 
 .main-content-center > ul {
-  // align-items: stretch;
-  // flex-direction: column;
+  align-items: stretch;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -199,13 +199,13 @@ input::placeholder {
 }
 
 .main-content-right {
-  // width: 25.062%;
+  width: 25.062%;
 }
 
 .dash-content-header {
   display: flex;
   justify-content: space-between;
-  background-color: #EEEEEE;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd ;
 }
 
@@ -214,14 +214,14 @@ input::placeholder {
 }
 
 .dash-content-header p {
-  background-color: #3a87ad;
+  background-color: #25A0FF;
   color: white;
   display: block;
-  border-radius: 5px;
-  font-size: 11px;
+  border-radius: 3px;
+  font-size: 15px;
   font-weight: 700;
-  padding: 3px 5px;
-  height: 12px;
+  padding: 10px 15px;
+  /* height: 12px; */
   margin-top: 25px;
 }
 .dash-content-header ul {
@@ -236,13 +236,20 @@ input::placeholder {
 }
 
 .dash-content-header .orange-btn, .dash-content-header .green-btn {
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 15px;
   font-size: 15px;
-  color: white;
+  /* color: white; */
+  border: none;
+  border-radius: 2px;
 }
 
 .dash-content-header .green-btn {
-  background-color: #5BC5A7;
+  background-color: #25A0FF;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-right: 15px;
 }
 
 .main-content-right {
