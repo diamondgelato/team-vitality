@@ -69,3 +69,9 @@ let user2 = new User ({
 // user2.save();
 
 // console.log("Saved 2 users");
+
+module.exports = {
+    'expense': Expense,
+    'user': User,
+    'group': Group
+};
