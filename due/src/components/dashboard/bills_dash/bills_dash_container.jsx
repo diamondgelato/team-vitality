@@ -1,9 +1,10 @@
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import BillsDash from './bills_dash';
-import { allBills } from '../../../actions/bill_actions';
+// import { allBills } from '../../../actions/bill_actions';
 
-const mapDispatchToProps = dispatch => ({
-  allBills: () => dispatch(allBills())
-})
+// const mapDispatchToProps = dispatch => ({
+//   allBills: () => dispatch(allBills())
+// })
 
-export default connect(mapDispatchToProps)(BillsDash);
+// export default connect(mapDispatchToProps)(BillsDash);
+export default BillsDash

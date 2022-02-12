@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 60px;
   justify-content: space-between;
   background-color: #25A0FF;
   color: white;
@@ -12,7 +12,7 @@
 .navbar > a {
   color: white;
   padding: 15px 10px 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -35,10 +35,11 @@
   background-color: #25A0FF;
   /* border-color: #aaa; */
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  padding: 0px 25px;
+  padding: 0px 15px;
   text-decoration: none;
+  margin-right: 14px;
 }
 
 .navbar-right .orange-btn {
@@ -47,8 +48,8 @@
   border-width: 0px;
   border-style: outset;
   display: block;
-  padding: 0px 25px;
-  font-size: 15px;
+  padding: 6px 20px;
+  font-size: 13px;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   margin-right: 10px;
@@ -56,6 +57,6 @@
 
 .navbar-right p {
   display: block;
-  padding: 5px 7px 5px;
-  font-size: 14px;
+  padding: 5px 5px 5px;
+  font-size: 13px;
 }

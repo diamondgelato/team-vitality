@@ -218,10 +218,10 @@ input::placeholder {
   color: white;
   display: block;
   border-radius: 3px;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 500;
   padding: 10px 15px;
-  /* height: 12px; */
+  height: 14px;
   margin-top: 25px;
 }
 .dash-content-header ul {
@@ -239,9 +239,9 @@ input::placeholder {
   margin: 10px 10px 10px 10px;
   padding: 10px 15px;
   font-size: 15px;
-  /* color: white; */
   border: none;
   border-radius: 2px;
+  background-color: rgb(228, 228, 228);
 }
 
 .dash-content-header .green-btn {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import UserDash from './user_dash';
-import { openModal } from '../../../actions/modal_actions';
-import { allFriends } from '../../../actions/friend_actions';
+// import { openModal } from '../../../actions/modal_actions';
+// import { allFriends } from '../../../actions/friend_actions';
 
 const mapStateToProps = state => {
   return ({
@@ -10,9 +10,10 @@ const mapStateToProps = state => {
   })
 }
 
-const mapDispatchToProps = dispatch => ({
-  openModal: modal => dispatch(openModal(modal)),
-  allFriends: () => dispatch(allFriends())
-})
+// const mapDispatchToProps = dispatch => ({
+//   openModal: modal => dispatch(openModal(modal)),
+//   allFriends: () => dispatch(allFriends())
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserDash);
+// export default connect(mapStateToProps, mapDispatchToProps)(UserDash);
+export default UserDash;

@@ -1,8 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import FriendDash from './friend_dash';
 import { withRouter } from 'react-router-dom';
-import { findFriend } from '../../../actions/friend_actions';
+// import { findFriend } from '../../../actions/friend_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return ({
@@ -11,8 +11,9 @@ const mapStateToProps = (state, ownProps) => {
   })
 }
 
-const mapDispatchToProps = dispatch => ({
-  findFriend: friendId => dispatch(findFriend(friendId))
-})
+// const mapDispatchToProps = dispatch => ({
+//   findFriend: friendId => dispatch(findFriend(friendId))
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(FriendDash))
+// export default connect(mapStateToProps, mapDispatchToProps)(withRouter(FriendDash))
+export default(FriendDash)

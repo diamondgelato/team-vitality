@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import FriendBillIndex from './friend_bill_index';
-import { allBills } from '../../../actions/bill_actions';
+// import { allBills } from '../../../actions/bill_actions';
 
 const mapStateToProps = (state, ownProps) => {
   const { friendId } = ownProps;
@@ -21,8 +21,9 @@ const mapStateToProps = (state, ownProps) => {
   })
 }
 
-const mapDispatchToProps = dispatch => ({
-  allBills: () => dispatch(allBills()),
-})
+// const mapDispatchToProps = dispatch => ({
+//   allBills: () => dispatch(allBills()),
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(FriendBillIndex)
+// export default connect(mapStateToProps, mapDispatchToProps)(FriendBillIndex)
+export default(FriendBillIndex)
