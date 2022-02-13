@@ -1,3 +1,4 @@
+import $ from 'jquery';
 export const signup = (user) => (
   $.ajax({
     url: `/api/users`,
