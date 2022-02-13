@@ -11,7 +11,6 @@ import '../dashboard.css';
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
@@ -32,12 +31,13 @@ class Dashboard extends React.Component {
         {/* <FriendsContainer /> */}
       </section>
 
-        {/* <Switch>
+        <Switch>
           <Route path='/dashboard' component={UserDashContainer} />
           <Route path={`/friends/:id`} component={FriendDashContainer} />
           <Route path='/all' component={BillsDashContainer} />
           <Route path='/activity' component={BillsDashContainer} />
-        </Switch> */}
+          <Route path='' />
+        </Switch>
     </div>
     )
   }
