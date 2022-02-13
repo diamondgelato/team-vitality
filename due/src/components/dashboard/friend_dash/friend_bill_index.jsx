@@ -1,5 +1,5 @@
 import React from 'react';
-import BillIndexItemContainer from '../../bills/bill_index_item_container';
+// import BillIndexItemContainer from '../../bills/bill_index_item_container';
 import NoExpenses from '../bills_dash/no_expenses';
 
 class FriendBillIndex extends React.Component {
@@ -24,11 +24,11 @@ class FriendBillIndex extends React.Component {
     if (bills.length === 0) return (<NoExpenses />)
     return (
       <div className="main-content-bill-index">
-        <ul>
+        {/* <ul>
           {bills.map(((bill) => (
             <BillIndexItemContainer bill={bill} key={bill.id} />
           )))}
-        </ul>
+        </ul> */}
       </div>
     )
   }

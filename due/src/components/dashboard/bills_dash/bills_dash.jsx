@@ -13,7 +13,7 @@ class BillsDash extends React.Component {
     return (
       <div className='dash-content-container'> 
         <section className="main-content-center">
-          <DashHeader 
+          <DashHeader   
             name={"All expenses"}
             registered={true}
             />

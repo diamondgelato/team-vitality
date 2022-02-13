@@ -1,4 +1,4 @@
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import BillsDash from './bills_dash';
 // import { allBills } from '../../../actions/bill_actions';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import Dashboard from './dashboard'
-// import { findFriend } from '../../actions/friend_actions';
-// import { openModal } from '../../actions/modal_actions';
+import { findFriend } from '../../actions/friend_actions';
+import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => ({
 
@@ -13,5 +13,5 @@ const mapDispatchToProps = dispatch => ({
   openModal: (modal) => dispatch(openModal(modal))
 })
 
-// export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
-export default Dashboard
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
+// export default Dashboard

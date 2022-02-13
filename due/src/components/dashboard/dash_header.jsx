@@ -1,6 +1,6 @@
 import React from 'react';
-// import { openModal } from '../../actions/modal_actions';
-// import { connect } from 'react-redux';
+import { openModal } from '../../actions/modal_actions';
+import { connect } from 'react-redux';
 import '../dashboard.css';
 
 class DashHeader extends React.Component {
@@ -16,7 +16,7 @@ class DashHeader extends React.Component {
           {pending}
         </div>
         <ul>
-          <button className='orange-btn'>Add an expense</button>
+          <button className='orange-btn'>Add expense</button>
           <button className='green-btn'>Settle up</button>
         </ul>
       </div>
@@ -29,9 +29,9 @@ const mapStateToProps = (state, ownProps) => ({
   registered: ownProps.registered,
 })
 
-// const mapDispatchToProps = dispatch => ({
-//   openModal: modal => dispatch(openModal(modal))
-// })
+const mapDispatchToProps = dispatch => ({
+  openModal: modal => dispatch(openModal(modal))
+})
 
-// export default connect(mapStateToProps, mapDispatchToProps)(DashHeader);
-export default DashHeader;
+export default connect(mapStateToProps, mapDispatchToProps)(DashHeader);
+// export default DashHeader;

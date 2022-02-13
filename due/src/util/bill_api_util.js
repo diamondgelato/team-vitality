@@ -1,3 +1,4 @@
+import $ from 'jquery';
 export const allBills = () => (
   $.ajax({
     url: `/api/bills`,
