@@ -1,4 +1,4 @@
-import * as commentApi from '../util/comment_api_util';
+// import * as commentApi from '../util/comment_api_util';
 
 export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
 export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';
@@ -31,25 +31,29 @@ export const clearCommentErrors = () => ({
 })
 
 export const allComments = () => dispatch => (
-  commentApi.allComments()
-    .then(comments => dispatch(receiveComments(comments)),
-    errors => dispatch(receiveCommentErrors(errors)))
+  // commentApi.allComments()
+  //   .then(comments => dispatch(receiveComments(comments)),
+  //   errors => dispatch(receiveCommentErrors(errors)))
+  {"text": "All Comments"}
 )
 
 export const findComment = (commentId) => dispatch => (
-  commentApi.findComment(commentId)
-    .then(comment => dispatch(receiveComment(comment)),
-    errors => dispatch(receiveCommentErrors(errors)))
+  // commentApi.findComment(commentId)
+  //   .then(comment => dispatch(receiveComment(comment)),
+  //   errors => dispatch(receiveCommentErrors(errors)))
+  {"text": "Find Comment"}
 )
 
 export const createComment = (comment) => dispatch => (
-  commentApi.createComment(comment)
-    .then(newComment => dispatch(receiveComment(newComment)),
-    errors => dispatch(receiveCommentErrors(errors)))
+  // commentApi.createComment(comment)
+  //   .then(newComment => dispatch(receiveComment(newComment)),
+  //   errors => dispatch(receiveCommentErrors(errors)))
+  {"text": "Create Comment"}
 )
 
 export const deleteComment = (commentId) => dispatch => (
-  commentApi.deleteComment(commentId)
-    .then(comment => dispatch(removeComment(comment)),
-    errors => dispatch(receiveCommentErrors(errors)))
+  // commentApi.deleteComment(commentId)
+  //   .then(comment => dispatch(removeComment(comment)),
+  //   errors => dispatch(receiveCommentErrors(errors)))
+  {"text": "Delete Comment"}
 )

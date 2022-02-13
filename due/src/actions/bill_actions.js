@@ -1,4 +1,4 @@
-import * as billApi from '../util/bill_api_util';
+// import * as billApi from '../util/bill_api_util';
 
 export const RECEIVE_BILLS = 'RECEIVE_BILLS';
 export const RECEIVE_BILL = 'RECEIVE_BILL';
@@ -37,33 +37,38 @@ export const clearBillErrors = () => ({
 })
 
 export const allBills = () => dispatch => (
-  billApi.allBills()
-    .then(bills => (dispatch(receiveBills(bills))),
-    errors => dispatch(receiveBillErrors(errors)))
+  // billApi.allBills()
+  //   .then(bills => (dispatch(receiveBills(bills))),
+  //   errors => dispatch(receiveBillErrors(errors)))
+  {"text": "All Bills"}
 )
 
 export const createBill = bill => dispatch => {
   return (
-  billApi.createBill(bill)
-    .then(newBill => dispatch(receiveBill(newBill)),
-    errors => dispatch(receiveBillErrors(errors)))
+  // billApi.createBill(bill)
+  //   .then(newBill => dispatch(receiveBill(newBill)),
+  //   errors => dispatch(receiveBillErrors(errors)))
+  {"text": "Create Bill"}
   )
 }
 
 export const updateBill = bill => dispatch => (
-  billApi.updateBill(bill)
-    .then(newBill => dispatch(receiveBill(newBill)),
-    errors => dispatch(receiveBillErrors(errors)))
+  // billApi.updateBill(bill)
+  //   .then(newBill => dispatch(receiveBill(newBill)),
+  //   errors => dispatch(receiveBillErrors(errors)))
+  {"text": "Update Bill"}
 )
 
 export const findBill = billId => dispatch => (
-  billApi.findBill(billId)
-    .then(bill => dispatch(receiveBill(bill)),
-    errors => dispatch(receiveBillErrors(errors)))
+  // billApi.findBill(billId)
+  //   .then(bill => dispatch(receiveBill(bill)),
+  //   errors => dispatch(receiveBillErrors(errors)))
+  {"text": "Find Bill"}
 )
 
 export const deleteBill = billId => dispatch => (
-  billApi.deleteBill(billId)
-    .then(bill => dispatch(removeBill(bill)),
-    errors => dispatch(receiveBillErrors(errors))) 
+  // billApi.deleteBill(billId)
+  //   .then(bill => dispatch(removeBill(bill)),
+  //   errors => dispatch(receiveBillErrors(errors))) 
+  {"text": "Delete Bill"}
 )
